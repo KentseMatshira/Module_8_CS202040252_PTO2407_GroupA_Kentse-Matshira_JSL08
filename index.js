@@ -13,15 +13,16 @@ class BankBranch {
         return bankBranchInstance;
     }
 
-// 4. Add methods to the `BankBranch` class for managing branch-related information. For example, you can add a method like `getBranchInfo` to retrieve branch details.
+// 4. Method to retrieve branch information
+getBranchInfo() {
+        return this.branchInfo;
 
-// 5. In the usage section:
-//    - Create instances of the `BankBranch` class, such as `branchA` and `branchB`, with different branch information.
-//    - Use the `getBranchInfo` method to retrieve branch information from the instances.
-//    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using `===`.
+// 5. Usage Example
+const branchA = new BankBranch("First Street Branch, CodeSpace Town");
+const branchB = new BankBranch("Second Street Branch, Home Town");
 
-// This pseudo-code provides a step-by-step explanation of how to implement the Singleton Pattern for managing a single instance of the `BankBranch` class throughout the application, ensuring that multiple instances refer to the same object.
-
+console.log(branchA.getBranchInfo());
+console.log(branchB.getBranchInfo());
 // NOTES:
 // This example demonstrates the Singleton pattern by creating a single instance of the `BankBranch` class.
 // Even if we attempt to create another instance of the branch, we receive the original instance,
