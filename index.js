@@ -4,18 +4,20 @@
 let bankBranchInstance = null;
 // 2. Define a class called `BankBranch` for managing branch information.
 class BankBranch {
-    constructor(branchInfo) {
-          // 3. Check if an instance already exists
- if(!bankBranchInstance) {
-            this.branchInfo = branchInfo;
-            bankBranchInstance = this;
-        }
-        return bankBranchInstance;
+  constructor(branchInfo) {
+    // 3. Check if an instance already exists
+    if (!bankBranchInstance) {
+      this.branchInfo = branchInfo;
+      bankBranchInstance = this;
     }
+    return bankBranchInstance;
+  }
 
-// 4. Method to retrieve branch information
-getBranchInfo() {
-        return this.branchInfo;
+  // 4. Method to retrieve branch information
+  getBranchInfo() {
+    return this.branchInfo;
+  }
+}
 
 // 5. Usage Example
 const branchA = new BankBranch("First Street Branch, CodeSpace Town");
